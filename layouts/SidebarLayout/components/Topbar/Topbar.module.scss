@@ -1,0 +1,42 @@
+.topbar-root {
+    height: 60px;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: var(--color-white);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 0.5rem;
+
+    .menu-icon {
+        color: var(--color-gray-3);
+        font-size: var(--hd-sm);
+        transition: color 0.2 ease;
+
+        &:hover {
+            color: var(--text-color);
+        }
+    }
+
+    .logout-btn {
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--color-red-2);
+        color: var(--text-color-white);
+        font-weight: 600;
+        border-radius: 4px;
+
+        &:hover {
+            filter: brightness(1.1);
+        }
+
+        &:active {
+            filter: brightness(0.9);
+        }
+    }
+}
+  

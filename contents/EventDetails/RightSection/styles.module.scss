@@ -1,0 +1,96 @@
+@mixin text-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  .icon {
+    width: 1rem;
+    min-width: 1rem;
+  }
+}
+
+.right-section {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .right-section {
+    display: block;
+    margin-top: 1rem;
+
+    font-family: var(--family-lato);
+
+    .sticky-component {
+      height: fit-content;
+      position: sticky;
+      top: 7rem;
+      background-color: var(--color-white);
+      padding: 1rem;
+      box-shadow: 5px 5px 5px var(--color-gray-2);
+      border-radius: 0.75rem;
+
+      .trending-banner {
+        @include text-with-icon;
+
+        justify-content: space-between;
+
+        .left-section {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .right-section {
+          display: block;
+          color: var(--color-gray-3);
+          font-size: var(--text-sm);
+        }
+      }
+
+      .location {
+        @include text-with-icon;
+        font-weight: bold;
+
+        align-items: flex-start;
+        .icon {
+          margin-top: 0.3em;
+        }
+      }
+
+      .miles {
+        @include text-with-icon;
+      }
+
+      .start-time {
+        @include text-with-icon;
+        color: var(--color-red-1);
+      }
+
+      .get-ticket {
+        display: block;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin-top: 3rem;
+        background-image: var(--gradient-primary);
+        color: var(--color-white);
+        border-radius: 0.35rem;
+      }
+    }
+
+    .ticket-from {
+      font-size: var(--text-lg);
+
+      @include text-with-icon;
+      justify-content: center;
+
+      .icon {
+        width: 2rem;
+      }
+
+      .price {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

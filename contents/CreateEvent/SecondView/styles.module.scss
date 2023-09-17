@@ -1,0 +1,72 @@
+.main-event-image {
+	position: relative;
+	margin: 1rem auto;
+
+	.image-upload {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+
+		text-align: center;
+		padding: 5rem 0 2rem;
+		background-color: var(--color-gray-light);
+
+		input {
+			display: none;
+		}
+
+		label {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			svg {
+				margin-bottom: 1rem;
+			}
+
+			cursor: pointer;
+		}
+
+
+		.preview-image {
+			position: absolute;
+			inset: 0;
+			pointer-events: none;
+
+			img {
+				height: 100%;
+			}
+		}
+
+		.remove-img-btn {
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			z-index: 1;
+			width: 1rem;
+			padding: 0;
+			border: none;
+			background-color: transparent;
+			color: var(--color-gray-3);
+			cursor: pointer;
+			visibility: hidden;
+
+			&:hover {
+				color: var(--color-red-2);
+			}
+		}
+	}
+
+	.contains-image {
+
+		.remove-img-btn {
+			visibility: visible;
+		}
+
+		label {
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+}

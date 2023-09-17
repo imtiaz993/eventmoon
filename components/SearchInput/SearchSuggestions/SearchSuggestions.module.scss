@@ -1,0 +1,250 @@
+.dropdown {
+  list-style: none;
+  transform-origin: 0 0;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -1rem);
+  width: 100%;
+  z-index: 9;
+
+  overflow-y: auto;
+
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+
+  background-color: var(--color-white);
+  box-shadow: 0 0 0.75rem 0 rgba(#000, 0.2);
+
+  h3 {
+    margin: 0;
+    font-weight: 600;
+    color: var(--text-color-dark);
+  }
+
+  .recent-searches {
+    margin: 5px 10px 7px;
+
+    .search-options,
+    .search-location {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .bar {
+        transform: rotate(90deg);
+        width: 50px;
+        padding: 0.5px;
+        background-color: #d9ecff;
+      }
+
+      div:nth-child(2n + 1) {
+        width: 45%;
+      }
+    }
+
+    .search-fields {
+      margin-top: 20px;
+
+      select {
+        width: 100%;
+        border: none;
+        font-weight: 500;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        color: #050a30;
+        outline: none;
+      }
+
+      .search-location {
+        margin-top: 7px;
+      }
+    }
+
+    .search-options,
+    .search-fields {
+      border: 1.5px solid #d9ecff;
+      border-radius: 12px;
+      padding: 10px;
+
+      .label {
+        margin: 0px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        color: #050a30;
+      }
+
+      input {
+        width: 100%;
+        margin: 0px;
+        border: none;
+        font-weight: 500;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        color: #050a30;
+        outline: none;
+      }
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+
+      span {
+        color: var(--text-color);
+        line-height: 1;
+      }
+
+      svg {
+        font-size: var(--text-lg);
+        color: var(--color-gray-3);
+      }
+    }
+  }
+
+  .event-destinations {
+    .destination {
+      display: flex;
+      align-items: center;
+
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--color-gray-2);
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        flex-grow: 2;
+
+        .state {
+          font-size: var(--text-xs);
+          color: var(--color-gray-3);
+          line-height: 1.2;
+        }
+      }
+
+      .explore-link {
+        color: var(--color-primary-dark);
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.skeleton {
+        .image {
+          height: 45px;
+          aspect-ratio: 16 / 9;
+          border-radius: 2px;
+          position: relative;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .city {
+            width: 10rem;
+            height: 1rem;
+          }
+
+          .state {
+            width: 5rem;
+            height: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+
+  .events {
+    .event {
+      display: flex;
+      align-items: center;
+
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--color-gray-2);
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        flex-grow: 2;
+
+        .city {
+          font-size: var(--text-xs);
+          color: var(--color-gray-3);
+          line-height: 1.2;
+        }
+
+        .distance {
+          font-size: var(--text-xs);
+          margin-left: 1rem;
+          color: var(--color-red-1);
+        }
+      }
+
+      .genre {
+        font-size: var(--text-sm);
+        color: var(--color-primary);
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  .search-suggestion {
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .group-heading {
+    color: #1a1445;
+    padding: 0.5rem 0;
+  }
+
+  @media (max-width: 640px) {
+    left: 57%;
+    min-width: 250px;
+    width: 110%;
+    padding: 0.5rem 0.5rem;
+
+    .recent-searches {
+      margin: 0px;
+
+      .search-options,
+      .search-fields {
+        padding: 5px 10px;
+
+        .bar {
+          width: 35px;
+        }
+
+        .label {
+          font-size: 10px;
+        }
+
+        input {
+          width: 105px;
+          font-size: 14px;
+        }
+      }
+
+      .search-fields {
+        margin-top: 10px;
+
+        .search-location {
+          margin-top: 3px;
+        }
+
+        select {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

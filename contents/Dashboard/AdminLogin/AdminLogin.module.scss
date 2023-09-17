@@ -1,0 +1,56 @@
+.admin-login-root {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .form-content {
+    width: 100%;
+    max-width: 25rem;
+
+    padding: 1rem 1rem 2rem 1rem;
+
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    .logo-wrapper {
+      text-align: center;
+    }
+
+    .input-group {
+      margin: 1rem 0;
+
+      & > div {
+        margin: 0.875rem 0;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.5rem 1rem;
+
+      font-family: var(--family-inter);
+      font-size: var(--text-base);
+      font-weight: 600;
+
+      border-radius: 4px;
+      color: white;
+      background: var(--gradient-primary);
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      svg {
+        width: 60px;
+      }
+
+      &:focus,
+      &:focus-within,
+      &:hover {
+        filter: brightness(0.85);
+      }
+    }
+  }
+}

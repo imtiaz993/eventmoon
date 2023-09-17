@@ -1,0 +1,68 @@
+.following-list-root {
+  ul {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    .item {
+      padding: 0.5rem 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left-section {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        img {
+          flex-shrink: 0;
+
+          width: 3.25rem;
+          height: 3.25rem;
+
+          border-radius: 50%;
+          object-fit: cover;
+          box-shadow: 0px 2px 10px 0px rgba(47, 73, 109, 0.5);
+        }
+
+        span {
+          font-size: var(--text-sm);
+          color: var(--text-color);
+        }
+      }
+
+      .right-section {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        button {
+          min-width: 4.75rem;
+          padding: 0.313rem 0;
+
+          font-family: var(--family-lato);
+          font-size: var(--text-xs);
+          line-height: 1.2;
+
+          border-radius: 4px;
+          border: 1px solid;
+          outline: none;
+          background: none;
+
+          &.unfollow {
+            color: var(--color-gray-3);
+            border-color: var(--color-gray-3);
+          }
+
+          &.follow {
+            color: var(--color-primary);
+            border-color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}

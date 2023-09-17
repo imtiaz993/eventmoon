@@ -1,0 +1,66 @@
+.notification-root {
+  height: 100%;
+  padding: 1.5rem 1rem;
+
+  position: relative;
+  transform-origin: bottom;
+  background: white;
+  transition: background 0.25s ease 0.15s;
+
+  &.open {
+    background: #f5faff;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+
+    user-select: none;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    &.select {
+      svg {
+        width: 18px;
+        height: 18px;
+
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .search-section {
+    min-height: 4.75rem;
+    padding: 0.875rem 0;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content-section {
+  }
+
+  .search-view-wrapper {
+    position: fixed;
+    inset: 100px 0 0;
+
+    background: #f5faff;
+    overflow-y: auto;
+    z-index: 1;
+  }
+
+  @media (min-width: 640px) {
+    .search-view-wrapper {
+      position: absolute;
+    }
+
+    .fixed {
+      height: 90%;
+      overflow-y: hidden;
+    }
+  }
+}

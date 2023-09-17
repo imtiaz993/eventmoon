@@ -1,0 +1,126 @@
+.otp-root {
+  font-family: var(--family-lato);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .otp-form-wrapper {
+    padding-top: 1rem;
+    padding-inline: 1rem;
+    height: 100vh;
+    width: 100%;
+
+    .otp-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        text-align: center;
+        color: var(--color-primary-dark);
+        font-weight: bold;
+        font-size: var(--hd-sm);
+        font-family: var(--family-inter);
+      }
+
+      .notice {
+        text-align: center;
+        font-weight: bold;
+        font-size: var(--text-medium);
+      }
+
+      .sent-to {
+        color: var(--color-gray-3);
+        text-align: center;
+        margin: 1rem 0;
+      }
+
+      .otp-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 3rem 0 2rem 0;
+
+        .input-field {
+          border: none;
+          box-shadow: 0 0 5px var(--color-gray-2);
+          border-radius: 0.35rem;
+          width: 2.5rem !important;
+          height: 2.5rem;
+          font-size: var(--text-medium);
+        }
+
+        .focused-input {
+          box-shadow: 5px 5px 5px var(--color-gray-2);
+          outline: none;
+        }
+      }
+
+      .resend {
+        text-align: center;
+        font-weight: bold;
+        a {
+          color: var(--color-primary-dark);
+        }
+      }
+
+      .submit-btn {
+        display: block;
+        background-color: var(--color-primary-dark);
+        color: var(--text-color-white);
+        border: none;
+        border-radius: 100vw;
+        font-weight: bold;
+        font-size: var(--text-medium);
+        padding: 0.75rem 0;
+        margin-top: auto;
+        cursor: pointer;
+      }
+
+      .another-way {
+        display: block;
+        text-align: center;
+        text-decoration: underline;
+        color: var(--color-primary-dark);
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .otp-root {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+
+    .otp-form-wrapper {
+      height: auto;
+      max-width: 540px;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+      border-radius: 0.75rem;
+
+      .otp-form {
+        .submit-btn {
+          margin-top: 1.5rem;
+          border-radius: 0;
+          background-color: transparent;
+          background-image: var(--gradient-primary);
+        }
+      }
+    }
+  }
+}

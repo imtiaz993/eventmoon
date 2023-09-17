@@ -1,0 +1,37 @@
+.heading-root {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 41px;
+  margin-bottom: 21px;
+  color: #0c0e14;
+
+  & span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1758fe;
+    margin-left: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 1px;
+      text-decoration-style: wavy;
+      text-decoration-color: currentColor;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 18px;
+
+    & span {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

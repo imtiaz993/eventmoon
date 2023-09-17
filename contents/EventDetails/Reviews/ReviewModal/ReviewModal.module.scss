@@ -1,0 +1,95 @@
+.review-modal-wrapper {
+  width: 100%;
+
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  & > .review-modal {
+    width: 100%;
+    max-width: 320px;
+    padding: 2rem;
+
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+
+    h3 {
+      font-size: var(--hd-xs);
+
+      color: var(--text-color-dark);
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+
+      font-size: var(--text-base);
+
+      color: var(--text-color);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      resize: none;
+      outline: none;
+
+      font-size: 0.875rem;
+      font-family: var(--family-lato);
+
+      color: var(--text-color);
+
+      &:focus {
+        border: 0.5px solid rgba(0, 0, 0, 0.9);
+      }
+    }
+
+    .btn-wrapper {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        color: var(--text-color);
+        background: transparent;
+        cursor: pointer;
+        outline: none;
+        border: none;
+      }
+    }
+
+    & > .no-user {
+      h2 {
+        font-size: var(--hd-xs);
+
+        color: var(--text-color-dark);
+      }
+
+      button {
+        padding: 0.375rem 2rem;
+
+        font-family: var(--family-lato);
+        font-size: var(--text-base);
+        line-height: 1.6;
+
+        color: white;
+        background: var(--gradient-primary);
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    background-color: #07162A;;
+    overflow: hidden;
+    padding-top: 75px;
+    margin: 0px auto;
+    max-width: 1800px;
+    @media(max-width:1024px) {
+        padding-top: 30px;
+    }
+    @media(max-width:640px) {
+        padding-top: 15px;
+    }
+
+    .image {
+        position: relative;
+        left: -340px;
+        bottom: 40px;
+       
+
+        @media(max-width:1024px) {
+            display: none;
+        }
+
+        div {
+            
+            width: 631.54px;
+            height: 602.47px;
+            margin-bottom: -24%;
+            margin-right: -100%;
+            span{
+                  
+            width: 631.54px;
+            height: 602.47px;
+            }
+        }
+    }
+
+    .content {
+        margin-left: -28%;
+        width: 70%;
+
+        @media(max-width:1024px) {
+            margin: 0px auto;
+            width: 90%;
+
+        }
+
+        .heading {
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 63px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.72);
+
+            @media(max-width:640px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+
+        .subheading {
+            padding: 10px 15px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 49px rgba(23, 88, 254, 0.46);
+            font-weight: 700;
+            font-size: 26px;
+            text-align: center;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+            color: #2F80ED;
+
+            @media(max-width:640px) {
+                font-size: 13px;
+                padding: 5px 5px;
+                line-height: 28px;
+            }
+        }
+
+        .content-wrapper {
+            @media (min-width:1024px){
+                margin-right: 10%;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        .join-button {
+            padding: 12px 20px;
+            background: #155FFD;
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            border: none;
+            @media(max-width:1024px) {
+                margin: 10px 0px 20px;
+
+            }
+            @media(max-width:640px) {
+                margin: 10px 0px 20px;
+
+                font-size: 14px;
+                line-height: 10px;
+            }
+
+        }
+    }
+
+}

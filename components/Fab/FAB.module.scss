@@ -1,0 +1,32 @@
+.fab-root {
+  width: 44px;
+  height: 44px;
+
+  position: fixed;
+  right: 10px;
+  bottom: var(--bottom-offset);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 6px 22px rgba(0, 0, 0, 0.09);
+  z-index: 2;
+  transition: bottom 0.25s ease;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    box-shadow: 0px 6.33143px 22.16px rgba(0, 0, 0, 0.05);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

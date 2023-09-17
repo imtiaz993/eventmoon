@@ -1,0 +1,68 @@
+.share-wrapper {
+  margin-top: 48px;
+  margin-inline: 16px;
+  box-shadow: 0px 4px 35px 0px #00000021;
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-family: var(--family-inter);
+    font-weight: 700;
+    font-size: var(--text-md);
+    line-height: 21px;
+    color: var(--text-color-dark);
+    margin: 0;
+  }
+
+  .megaphone {
+    width: 3rem;
+  }
+
+  .circle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      color: var(--text-color-white);
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-inline: 0px;
+    margin-top: 51px;
+
+    p {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .megaphone {
+      width: 4rem;
+    }
+
+    .circle {
+      width: 36px;
+      height: 36px;
+
+      .icon {
+        font-size: var(--text-lg);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.pill {
+	position: absolute;
+	padding: 0.45em 1em;
+	background-image: var(--gradient-primary);
+	color: var(--text-color-white);
+	border-radius: 100vw;
+	font-weight: bold;
+
+	span {
+		line-height: 1;
+	}
+}

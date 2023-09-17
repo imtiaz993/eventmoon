@@ -1,0 +1,73 @@
+.input-root {
+  width: 100%;
+
+  .label {
+    font-family: var(--family-inter);
+    font-size: var(--text-sm);
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 1.6;
+    display: block;
+    padding: 0.5rem 0 0.25rem 0;
+  }
+
+  .wrapper {
+    padding: 0.875rem 0.625rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+
+    background: #fff;
+    border-radius: 6px;
+
+    .icon-wrapper {
+      display: flex;
+      color: var(--color-gray-3);
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .input {
+      width: 100%;
+
+      font-family: var(--family-lato);
+      font-size: var(--text-sm);
+      line-height: 1.2;
+
+      color: var(--text-color-dark);
+      border: none;
+      background: none;
+      outline: none;
+
+      &::placeholder {
+        color: var(--color-gray-3);
+      }
+
+      &:autofill {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        box-shadow: 0 0 0 30px white inset !important;
+
+        -webkit-text-fill-color: var(--text-color-dark) !important;
+      }
+    }
+  }
+
+  .default-padding {
+    padding: 0.4rem;
+  }
+
+  @media (min-width: 640px) {
+    .wrapper {
+      .input {
+        &:autofill {
+          -webkit-box-shadow: 0 0 0 30px var(--color-gray-light) inset !important;
+          box-shadow: 0 0 0 30px var(--color-gray-light) inset !important;
+        }
+      }
+    }
+  }
+}

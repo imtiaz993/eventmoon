@@ -1,0 +1,86 @@
+.suggestions-root {
+  align-self: stretch;
+
+  margin: 3rem 0;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.15);
+  border-radius: 0.75rem;
+
+  .events,
+  .venues {
+    .heading {
+      font-size: var(--hd-xs);
+      font-family: var(--family-inter);
+      color: var(--text-color-dark);
+    }
+
+    .list {
+      padding-top: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  .suggestion-root {
+    display: flex;
+
+    gap: 0.5rem;
+
+    .img-wrapper {
+      position: relative;
+
+      aspect-ratio: 16 / 9;
+      width: 100px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .title {
+      text-transform: uppercase;
+      color: var(--color-primary-dark);
+      line-height: 1.2;
+    }
+
+    .extra {
+      font-size: var(--text-sm);
+      .sub-title {
+        color: var(--color-gray-3);
+        line-height: 1.2;
+      }
+      .distance {
+        margin-left: 0.5rem;
+        font-size: var(--text-xs);
+        color: var(--text-color);
+      }
+    }
+
+    &.skeleton {
+      .title {
+        width: 10rem;
+        height: 1rem;
+      }
+
+      .sub-title {
+        font-size: var(--text-sm);
+        width: 50%;
+      }
+    }
+  }
+
+  @media (min-width: 640px) {
+    margin-inline: 3rem;
+    justify-content: space-evenly;
+  }
+}

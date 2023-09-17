@@ -1,0 +1,44 @@
+.eventmooner-wrapper {
+  text-align: center;
+
+  margin-bottom: 50px;
+  .heading {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333333;
+  }
+  .sub-heading {
+    width: 35%;
+    @media (max-width: 1024px) {
+      width: 70%;
+    }
+    margin: 20px auto;
+    font-size: 24px;
+    font-weight: 400;
+    color: #6d6d6d;
+    a {
+      color: #01a9ef;
+    }
+  }
+  .apps-store {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 24px;
+    }
+    .sub-heading {
+      font-size: 16px;
+    }
+    .apps-store {
+      width: 75%;
+      margin: 0px auto;
+    }
+  }
+}

@@ -1,0 +1,171 @@
+.booking-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 640px) {
+    margin-bottom: 120px;
+  }
+
+  .ticket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .get-ticket {
+      background: #ffffff;
+      box-shadow: 0px 1.95862px 30px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      width: 565.63px;
+      height: 100px;
+      padding: 20px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 640px) {
+        padding: 20px 10px;
+        svg{
+          width: 25px;
+          height: 25px;
+        }
+        width: 100%;
+        height: max-content;
+        padding: 10px;
+        margin: 10px 0px;
+      }
+
+      .ticket-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        width: 100%;
+       
+
+        .ticket-info {
+          
+          div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ticket-text {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 21px;
+              letter-spacing: -0.493566px;
+              color: #000000;
+              margin: 0;
+              @media (max-width: 640px) {
+                font-size: 14px;
+                
+              }
+              
+            }
+
+            .ticket-price {
+              font-style: italic;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 21px;
+              text-align: center;
+              letter-spacing: -0.493566px;
+              color: #1758fe;
+              margin: 0;
+              @media (max-width: 640px) {
+                font-size: 13px;
+             
+              }
+            }
+          }
+
+       
+        }
+
+        .ticket-date {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 25px;
+          color: #000000;
+          margin: 0;
+
+          @media (max-width: 640px) {
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 10px;
+          }
+        }
+
+        .get-button {
+          display: flex;
+          cursor: pointer;
+          background: linear-gradient(92.83deg, #00aff0 0%, #1758fe 100%);
+          border-radius: 7.19067px;
+          padding: 10px 0px;
+          border: none;
+          margin-right: 5px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          @media (max-width: 640px) {
+           min-width: 110px;
+           max-width: 110px;
+           padding: 7px 0px;
+            svg{
+              width: 20px;
+              height: 20px;
+      
+         
+          }
+        }
+          
+         
+
+          p {
+            margin: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17.7684px;
+            line-height: 21px;
+            text-align: center;
+            color: #ffffff;
+            margin-right: 5px;
+            @media (max-width: 640px) {
+              font-size: 12px;
+             
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .get-your-ticket {
+    margin-top: 90px;
+    margin-bottom: 50px;
+    background: linear-gradient(92.83deg, #00aff0 0%, #1758fe 100%);
+    border-radius: 8.56037px;
+    width: 570px;
+    height: 65px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26.087px;
+    line-height: 31px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+}

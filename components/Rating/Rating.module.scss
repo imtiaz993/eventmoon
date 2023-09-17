@@ -1,0 +1,29 @@
+.rating-root {
+  &.xs {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &.sm {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &.base {
+    svg {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.md {
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

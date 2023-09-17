@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: 1050px;
+  margin: 16px 0;
+  padding-inline: 20px;
+
+  .label {
+    margin: 0;
+
+    display: inline;
+
+    font-size: var(--text-base);
+
+    color: var(--text-color);
+    text-transform: lowercase;
+    white-space: pre-line;
+  }
+
+  span {
+    font-family: var(--family-inter);
+    font-size: var(--text-sm);
+
+    margin-left: 8px;
+
+    color: #1758fe;
+    cursor: pointer;
+  }
+
+  @media (min-width: 640px) {
+    margin: 32px 0;
+    padding-inline: 0;
+
+    .label {
+      font-size: var(--text-md);
+    }
+  }
+}

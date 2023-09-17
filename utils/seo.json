@@ -1,0 +1,108 @@
+[
+    {
+        "category":"Today",
+        "data":{
+            "title":"Events in the Las Vegas USA Today | Eventmoon",
+            "description":"Discover all the Events & Activities Taking Place in the US Right Now. Consider attending US Trek, Comedy, Music, Workshops, and Travel Events."
+        }
+    },
+    {
+        "category":"Tomorrow",
+        "data":{
+            "title":"From Your Home, Attend Virtual Events | Eventmoon Events in the Las Vegas USA - Discover  tomorrow's Events & Activities In The Las Vegas USA",
+            "description":"Discover the top local and national events taking place tomorrow. Discover upcoming live music performances, magic performances, comedy performances, and more. Your guide to the top Las Vegas USA events, activities, and attractions."
+        }
+    },
+    {
+        "category":"This-Weekend",
+        "data":{
+            "title":"Top Upcoming Events in the Las Vegas USA | Eventm",
+            "description":"Purchase tickets for the top U.S. events coming up. On Eventmoon, search for local music, comedy, workshops, and online events in the Las Vegas USA."
+        }
+    },
+    {
+        "category":"Entertainment",
+        "data":{
+            "title":"Las Vegas USA Entertainment Events | Eventmoon",
+            "description":"Entertainment Events in the United States - Discover entertainment events, parties, concerts, including magic shows, comedies, plays, and much more."
+        }
+    },
+    {
+        "category":"Live-Music",
+        "data":{
+            "title":"Best Upcoming Music Events in the Las Vegas USA: Music",
+            "description":"Reserve seats for the best musical events. Visit Eventmoon to view upcoming local music events, concerts, and online music performances."
+        }
+    },
+    {
+        "category":"Activities",
+        "data":{
+            "title":"Best US activities - Eventmoon",
+            "description":"View all of the events and activities taking on throughout the Las Vegas USA. Visit American Trek, Comedy, Music, Workshops, and Travel Events"
+        }
+    },
+    {
+        "category":"Family",
+        "data":{
+            "title":"Family-Friendly Activities - Eventmoon",
+            "description":"Whatever the size of your family, whether it be children, siblings, teenagers, or parents, Eventmoon offer the greatest fun family activity for indoor, outdoor, daytime, and nighttime!"
+        }
+    },
+    {
+        "category":"Business",
+        "data":{
+            "title":"Tickets for upcoming business events in the Las Vegas USA today, this weekend, and this month",
+            "description":"Find the top upcoming business events taking place in the Las Vegas USA. Get ready to learn about corporate, business, and much more."
+        }
+    },
+    {
+        "category":"Tech",
+        "data":{
+            "title":"Top tech events | Eventmoon",
+            "description":"Here's some good news if you were unable to attend live tech events: Numerous conferences appear to be returning to virtually normal, which is encouraging."
+        }
+    },
+    {
+        "category":"Games",
+        "data":{
+            "title":"Upcoming Games Events | Eventmoon",
+            "description":"Are you interested in staying up to date on this year's planned games presentations and events? We have your back."
+        }
+    },
+    {
+        "category":"Virtual",
+        "data":{
+            "title":"From Your Home, Attend Virtual Events | Eventmoon",
+            "description":"Online events offer fantastic chances to socialise and educate yourself. On Eventbrite, you can discover a fresh online course, an entertaining live stream, or a useful webinar."
+        }
+    },
+    {
+        "category":"Sports",
+        "data":{
+            "title":"upcoming Sports Events | Eventmoon",
+            "description":"upcoming sporting events in the Las Vegas USA | live sporting competitions - Eventmoon"
+        }
+    },
+    {
+        "category":"Party",
+        "data":{
+            "title":"Future Party Events in Las Vegas USA: Tickets Available Today, This Weekend, & This Month",
+            "description":"The greatest Party events in India are listed here. Prepare to learn about masti, partying, clubbing, night partying, and much more."
+        }
+    },
+    {
+        "category":"Flying-Day",
+        "data":{
+            "title":"Flying-day events | Eventmoon",
+            "description":"Find hundreds of aviation events, including fly-ins, air shows, conferences, and webnairs, on the 2022 aviation events calendar."
+        }
+    },
+    {
+        "category":"Health",
+        "data":{
+            "title":"Health Events Online | Eventmoon",
+            "description":"Online events offer fantastic chances to socialize and educate yourself. On Eventmoon, discover fresh online health events."
+        }
+    }
+    
+]

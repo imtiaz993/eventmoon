@@ -1,0 +1,80 @@
+.create-post-root {
+    padding-bottom: 3rem;
+
+    .form {
+        // display: flex;
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        grid-template-areas: "left right" "content content" "submit submit";
+        gap: 2rem;
+
+        .card {
+            padding: 24px;
+
+            box-shadow: rgba(145, 158, 171, 0.48) 0px 0px 1px 0px, rgba(145, 158, 171, 0.24) 0px 2px 4px -1px;
+            border-radius: 1rem;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .right {
+            grid-area: right;
+
+            display: flex;
+            flex-direction: column;
+
+            
+            .publish {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 600;
+                color: var(--text-color);
+                margin-bottom: 0.5rem;
+            }
+        }
+        
+        .content {
+            grid-area: content;
+            
+            padding: 2rem;
+            background-color: var(--color-gray-light);
+            border-radius: 1rem;
+        }
+        
+        .submit-wrapper {
+            grid-area: submit;
+
+            .submit-btn {
+                margin-top: 2rem;
+                margin-inline: auto;
+                
+                display: block;
+                width: 100%;
+                max-width: 400px;
+                background: var(--color-primary);
+                color: var(--text-color-white);
+    
+                font-weight: bold;
+                font-size: var(--text-md);
+                border-radius: 4px;
+            }
+
+            .loading-dots {
+                height: var(--text-sm);
+            }
+        }
+            
+    }
+
+    .label {
+        font-weight: 600;
+        color: var(--text-color);
+    }
+
+    .disabled {
+        opacity: 0.5;
+    }
+}
+  

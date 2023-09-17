@@ -1,0 +1,19 @@
+.search-input-root {
+  position: relative;
+
+  .prefix-icon {
+    color: var(--color-primary);
+  }
+
+  .search-input {
+    border: 1.5px solid #d9ecff;
+    border-radius: 8px;
+  }
+
+  @media (max-width:640px) {
+    .mobile-top-search {
+      background-color: #F6F7F9;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.ribbon-root {
+  --ribbon-size: 20px;
+  --ribbon-padding: 4px;
+
+  padding: var(--ribbon-padding) calc(var(--ribbon-padding) * 3)
+    var(--ribbon-padding) calc(var(--ribbon-padding) * 8);
+
+  position: absolute;
+  bottom: calc(var(--ribbon-padding) + 2px);
+  right: 0;
+
+  border-radius: 2px;
+  background-color: #ff8d02;
+  color: var(--text-color-white);
+  font-size: var(--text-xs);
+  font-family: var(--family-lato);
+  font-weight: 600;
+  clip-path: polygon(0 0, var(--ribbon-size) 50%, 0 100%, 100% 100%, 100% 0);
+  
+  overflow-x: hidden;
+}

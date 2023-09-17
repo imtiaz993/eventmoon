@@ -1,0 +1,119 @@
+.event-description {
+  background-color: white;
+
+  .event-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 400px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #1a1445;
+      max-width: 546px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      height: max-content;
+
+      @media (max-width: 640px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .mobile-notify-button {
+      display: none;
+
+      @media (max-width: 640px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background: linear-gradient(92.83deg, #00aff0 0%, #1758fe 100%);
+        border-radius: 41.7714px;
+        width: 234px;
+        height: 40px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+
+      @media (max-width: 400px) {
+        margin-top: 15px;
+        width: 190px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 13px;
+        color: #ffffff;
+        margin-right: 3px;
+
+        @media (max-width: 400px) {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .mobile-rating {
+    display: none;
+
+    @media (max-width: 640px) {
+      margin-top: 10px;
+      display: block;
+    }
+    @media (max-width: 400px) {
+      margin-top: 17px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .event-location {
+    display: flex;
+    align-items: center; 
+    height: max-content;
+    @media(max-width:640px) {
+      width: 90%;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      padding-left: 15px;
+      @media(max-width:640px) {
+        font-size: 18px;
+      }
+   
+    }
+  }
+
+  .event-distance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #333333;
+      padding-left: 5px;
+    }
+  }
+}

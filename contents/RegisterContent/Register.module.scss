@@ -1,0 +1,196 @@
+.register-root {
+  margin-top: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--text-color);
+
+  //   height: calc(100vh - 6rem);
+
+  .register-form-wrapper {
+    padding: 1rem;
+    position: relative;
+
+    .register-form {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      //   margin: 1rem;
+      //   margin-top: 4rem;
+
+      .input-fields {
+        margin-top: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .grid-cols-2 {
+          display: grid;
+          gap: 1rem;
+        }
+
+        .input-wrapper {
+          border-bottom: 1px solid var(--color-gray-2);
+
+          &.invalid {
+            border-bottom: 1px solid var(--color-red-1);
+          }
+        }
+
+        @media (max-width: 640px) {
+          .input-wrapper {
+            padding: 0.625rem 0;
+            border-radius: 0;
+            background: none;
+          }
+        }
+      }
+
+      h1 {
+        color: var(--color-primary-dark);
+        margin: 0;
+        font-weight: bold;
+        font-family: var(--family-inter);
+      }
+      .title.desktop {
+        color: var(--color-primary-dark);
+        font-weight: bold;
+        text-align: center;
+      }
+      .title.mobile {
+        font-size: var(--text-lg);
+        color: var(--text-color-dark);
+        font-weight: 600;
+        font-family: var(--family-lato);
+      }
+
+      .terms {
+        .checkbox-group {
+          display: flex;
+          align-items: baseline;
+          gap: 0.5rem;
+        }
+      }
+
+      .submit-btn {
+        padding: 0.85rem 0;
+        border: 2px solid var(--color-primary-dark);
+        color: var(--color-primary-dark);
+        border-radius: 100vw;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: var(--text-base);
+        display: block;
+        text-align: center;
+
+        svg {
+          width: 60px;
+          height: 100%;
+        }
+      }
+
+      .have-account.desktop {
+        text-align: center;
+        color: var(--color-gray-3);
+        margin-top: 1rem;
+
+        a {
+          color: var(--color-primary);
+        }
+      }
+
+      .have-account.mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        .text {
+          text-align: center;
+          color: var(--color-gray-3);
+        }
+
+        .login-btn {
+          border: 2px solid var(--color-primary);
+          border-radius: 100vw;
+          color: var(--color-primary);
+          padding: 0.85rem 0;
+          margin: 0.5rem 0 1rem 0;
+          text-align: center;
+          font-weight: bold;
+          font-size: var(--text-medium);
+        }
+
+        .notice {
+          text-align: center;
+          font-size: var(--text-x-small);
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .register-root {
+    margin-top: 0;
+    margin-bottom: 1rem;
+
+    .desktop {
+      display: block !important;
+    }
+
+    .mobile {
+      display: none !important;
+    }
+
+    .register-form-wrapper {
+      max-width: 32rem;
+      margin-top: 1rem;
+      padding: 1.5rem;
+
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+      border-radius: 0.75rem;
+
+      .register-form {
+        // margin: 2rem;
+
+        h1 {
+          text-align: center;
+          color: var(--text-color-dark);
+        }
+        .input-fields {
+          .grid-cols-2 {
+            grid-template-columns: 1fr 1fr;
+          }
+          .control-group {
+            label {
+              font-weight: bold;
+              font-family: var(--family-lato);
+            }
+            input {
+              padding: 0.5rem;
+              background-color: var(--color-gray-1);
+            }
+          }
+        }
+        .submit-btn {
+          border: none;
+          color: var(--text-color-white);
+          background-image: var(--gradient-primary);
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.see-more-root {
+  max-width: 1800px;
+  margin: 0 auto;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1;
+
+  @media (min-width: 640px) {
+    margin-inline: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin-inline: 2.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    margin-inline: 5.125rem;
+  }
+}

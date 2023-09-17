@@ -1,0 +1,82 @@
+@mixin btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: var(--text-base);
+    color: var(--text-color-white);
+
+    .prefix {
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        filter: brightness(1.1);
+    }                
+}
+
+.post-root {
+    margin-top: 2rem;
+
+    .hero {
+        position: relative;
+        aspect-ratio: 21 / 9;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        .details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .title {
+                font-weight: 600;
+                font-size: var(--hd-lg);
+                color: var(--text-color-white);
+                text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+                max-width: 70%;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 1rem;
+                
+                .edit-btn {
+                    @include btn;
+                    background-color: var(--color-primary);
+                }
+    
+                .delete-btn {
+                    @include btn;
+                    background-color: var(--color-red-2);
+                }
+            }
+
+            
+        }
+    }
+
+    .details {
+        .row {
+            padding: 1rem;
+
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-gray-3);
+        }
+
+        .description {
+            color: var(--text-color);
+        }
+
+        .content {
+            font-size: var(--text-md);
+            color: var(--text-color-dark);
+        }
+    }
+}
+  

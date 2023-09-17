@@ -1,0 +1,38 @@
+.blog-slider-root {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 44px 0;
+
+  .heading {
+    margin: 1rem 0;
+
+    font-size: var(--hd-sm);
+    font-family: var(--family-inter);
+    font-weight: 700;
+    line-height: 1.6;
+
+    color: var(--text-color-dark);
+    text-align: center;
+  }
+
+  .swiper {
+    padding: 2rem 0;
+    background: red !important;
+  }
+
+  @media (min-width: 640px) {
+    padding-inline: 0;
+
+    .heading-wrapper {
+      padding-inline: 84px;
+    }
+
+    .heading {
+      white-space: pre-line;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding-inline: 5rem;
+  }
+}

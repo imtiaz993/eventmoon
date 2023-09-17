@@ -1,0 +1,160 @@
+.reviews-root {
+	font-family: var(--family-lato);
+	margin-bottom: 5rem;
+
+	.summary {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		
+
+		.heading {
+
+			font-size: 34.4822px;
+			color: #1A1445;
+			@media (max-width:640px) {
+				font-size: 14px;
+				
+			}
+		}
+
+		.rating-text {
+			display: flex;
+			font-weight: 600;
+			font-size: 73.8904px;
+
+			color: #1A1445;
+@media (max-width:640px) {
+	font-size: 30px;
+}
+			@media (min-width: 640px) {
+				
+				margin-left: 0.5em;
+			}
+		}
+
+		.rating {
+			display: flex;
+			font-size: var(--text-lg);
+			@media (max-width:1024px) {
+			
+				svg{
+					width: 23px;
+					height: 23px;
+				}
+			}
+			@media (max-width:640px) {
+				font-size: 14px;
+				svg{
+					width: 12px;
+					height: 12px;
+				}
+			}
+		}
+
+		.rate-btn {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			font-size: var(--text-lg);
+
+			color: var(--color-primary-dark);
+			border: 1px solid var(--color-primary-dark);
+			border-radius: 100vw;
+			padding: 0.3em 1em;
+			margin: 1rem 0;
+			@media (max-width:640px) {
+				font-size: 12px;
+				
+					svg{
+						width: 20px;
+						height: 20px;
+					}
+				
+			}
+			@media (min-width: 640px) {
+				margin: 0;
+			}
+		}
+	}
+
+	.review-wrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+		align-items: flex-start;
+		flex-direction: row;
+		.rating {
+			display: flex;
+			font-size: var(--text-lg);
+			@media (max-width:1024px) {
+			
+				svg{
+					width: 23px;
+					height: 23px;
+				}
+			}
+			@media (max-width:640px) {
+				font-size: 14px;
+				svg{
+					width: 12px;
+					height: 12px;
+				}
+			}
+		}
+		
+
+		.profile-picture {
+			width: 4rem;
+			height: 4rem;
+			flex: 0 0 4rem;
+			margin: 0.5rem 1rem 0 0;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.name {
+			font-size: var(--hd-md);
+			@media (max-width:640px) {
+				font-size: 16px;
+			}
+		}
+
+		.date {
+			color: var(--color-gray-3);
+		}
+	
+		.review-text {
+			color: var(--color-gray-4);
+			font-size: var(--text-lg);
+			max-width: 720px;
+			@media (max-width:640px) {
+				font-size: 12px;
+			}
+		}
+
+		
+	}
+	.view-all-btn {
+		margin-inline: auto;
+		display: block;
+		width: fit-content;
+		padding: 0.3em 1.5em;
+		border: 1px solid var(--color-primary-dark);
+		border-radius: 100vw;
+		color: var(--color-primary-dark);
+		font-size: var(--text-lg);
+		@media (max-width:640px) {
+			font-size: 12px;
+		}
+	}
+
+}

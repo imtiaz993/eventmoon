@@ -1,0 +1,117 @@
+.event-pictures {
+  padding: 28px 22px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  margin-top: 35px;
+
+  @media (max-width: 640px) {
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 0px;
+    margin-top: 55px;
+  }
+
+  .pictures-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 36px;
+      color: #1a1445;
+      margin-top: -3px;
+
+      @media (max-width: 640px) {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 0px;
+      }
+    }
+
+    p {
+      display: none;
+
+      @media (max-width: 640px) {
+        display: block;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 17px;
+        color: #1758fe;
+        margin: 0;
+        margin-top: -7px;
+      }
+    }
+  }
+
+  .event-imgs-parent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: 640px) {
+      justify-content: center;
+    }
+
+    .show-all {
+      position: relative;
+      img{
+        filter: brightness(50%);
+      }
+      .more-images {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        z-index: 1;
+        cursor: pointer;
+
+        h2 {
+          width: 70%;
+          margin: 0px auto;
+          margin-top: 50px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 36px;
+          color: #FFFFFF;
+        }
+
+        p {
+          margin: 0px auto;
+          width: 70%;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    .event-pic {
+      margin: 5px;
+      cursor: pointer;
+      &:hover{
+        filter: brightness(80%);
+      }
+      img {
+        border-radius: 6px;
+        width: 172px !important;
+        height: 172px !important;
+        object-fit: cover;
+
+        @media (max-width: 640px) {
+          width: 271px !important;
+          height: 157.04px !important;
+        }
+      }
+    }
+  }
+}

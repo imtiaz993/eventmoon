@@ -1,0 +1,19 @@
+.main-wrapper-root {
+  .sections {
+    display: block;
+
+    @media (min-width: 900px) {
+      padding-bottom: 2rem;
+
+      display: grid;
+      grid-template-columns: 1fr minmax(320px, 420px);
+      gap: 2rem;
+
+      font-size: var(--text-medium);
+    }
+
+    @media (min-width: 1280px) {
+      gap: 4rem;
+    }
+  }
+}

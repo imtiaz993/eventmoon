@@ -1,0 +1,55 @@
+.basic-info {
+	.inputWrapperClass {
+		background-color: #f7f9fc;
+	}
+	.tags-wrapper{
+		display: flex;
+		.tag{
+			position: relative;
+			margin-left: 5px;
+			padding: 5px 20px;
+			font-size: 14px;
+			font-weight: 600;
+			color: var(--color-primary);
+			background-color: white;
+			box-shadow: 0px 0px 10px 0px #165ffc33;
+			cursor: pointer;
+			.removeTag{
+				display: none;
+				font-size: 12px;
+				line-height: 12px;
+				color: red;
+				font-weight: 900;
+				background-color: #f7f9fc;
+				position: absolute;
+				right:5px;
+				top: 5px;
+				
+			}
+			&:hover{
+				.removeTag{
+					display: inline-block;
+				}
+			}
+		}
+		
+	}
+	.add-tag {
+		display: flex;
+		gap: 0.5rem;
+
+		input {
+			flex: 2 1 auto;
+		}
+
+		button {
+			padding: 0.5em 2em;
+			font-size: var(--text-medium);
+			border: 1px solid var(--color-primary-dark);
+			border-radius: 4px;
+			color: var(--color-primary-dark);
+			background-color: var(--color-gray-light);
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.search-input-root {
+  width: 100%;
+
+  padding: 0.688rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease, background 0.25s ease 0.2s;
+
+  input {
+    flex-grow: 1;
+
+    font-family: var(--family-lato);
+    font-size: var(--text-sm);
+    line-height: 1.2;
+
+    color: var(--text-color);
+
+    outline: none;
+    border: none;
+    background: none;
+  }
+
+  svg {
+    max-width: 16px;
+    max-height: 16px;
+  }
+
+  &:not(.select) {
+    width: 3rem;
+    height: 3rem;
+
+    justify-content: center;
+
+    border-radius: 50%;
+    background: rgba(23, 88, 254, 0.08);
+
+    input {
+      width: 0;
+      padding: 0;
+
+      position: absolute;
+    }
+
+    svg {
+      flex-grow: 1;
+    }
+  }
+}

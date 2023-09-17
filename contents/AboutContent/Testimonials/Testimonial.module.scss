@@ -1,0 +1,242 @@
+.testimonial-root {
+    // padding-bottom: 3rem;
+    position: relative;
+    margin: 0px auto;
+    max-width: 1800px;
+
+    .bg-color {
+        padding: 20px 0px 0px;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 50px 0px;
+        background-image: url('/assets/images/backgroundblue.png');
+
+        .banner {
+            .rating-heading {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .txt-large {
+        font-size: 59px;
+        font-weight: 700;
+        color: #ffff;
+    }
+
+    .heading-wrap {
+        display: flex;
+
+        justify-content: start;
+        align-items: center;
+
+        .txt-subheading {
+            margin-top: 10px;
+            font-size: 44px;
+            font-weight: 700;
+            color: #1758fe;
+        }
+
+        .txt-lg {
+            margin-right: 10px;
+
+            font-size: 59px;
+            font-weight: 700;
+            color: #1758fe;
+        }
+    }
+
+    .txt-lastsubheading {
+        font-size: 36px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .img-sub {
+        display: inline-block;
+        position: relative;
+        left: 200px;
+        top: 20px;
+
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    .img-arrsub {
+        display: inline-block;
+        position: relative;
+        left: 287px;
+        top: 15px;
+
+        @media (max-width:1024px) {
+            display: none;
+        }
+    }
+
+    .arrdown-para {
+        font-size: 23px;
+        font-weight: 600;
+        color: #ffffff;
+        padding-left: 210px;
+        padding-top: 15px;
+    }
+
+    .get-the-app {
+        align-items: center;
+        padding-left: 129px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+
+
+        .btn-appsotre-ml {
+            margin-left: 24px;
+        }
+    }
+
+
+
+    .right-img {
+        .testimonial-image {
+            width: 550px;
+            height: 137px;
+            margin-bottom: 29px;
+            span,img{
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    .mobile-rating {
+        color: white;
+
+    }
+
+    .mboile-stars-img {
+        display: block;
+        margin-left: 15px;
+    }
+
+
+
+    @media (max-width: 640px) {
+
+        .bg-color {
+            padding: 5px 0px;
+            flex-direction: column;
+
+            .rating-heading {
+                margin-top: 30px;
+                justify-content: center;
+                flex-direction: column;
+            }
+        }
+
+        .right-img {
+
+            margin-top: 50px;
+
+            .testimonial-image {
+                margin: 0px auto;
+                margin-bottom: 15px;
+                width: 90%;
+                height: auto;
+
+                img {
+                    width: 100%;
+
+
+                    margin: 0px auto;
+                }
+            }
+        }
+
+        .heading-wrap {
+            display: none;
+        }
+
+        .txt-lastsubheading {
+            display: none;
+        }
+
+        .img-sub {
+            display: none;
+        }
+
+        .img-arrsub {
+            display: none;
+        }
+
+        .txt-large {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            color: #ffffff;
+        }
+
+        .mobile-img {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 26px;
+            height: 270px;
+        }
+
+        .arrdown-para {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+
+        .get-the-app {
+            width: 75%;
+            margin: 0px auto;
+            padding-left: 0px;
+            padding-top: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            .btn-appsotre-ml {
+                margin-left: 16px;
+            }
+
+            svg {
+                max-width: 100%;
+            }
+        }
+
+        .mobile-rating {
+            display: block;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mboile-stars-img {
+            display: block;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+    }
+}

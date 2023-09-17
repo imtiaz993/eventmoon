@@ -1,0 +1,30 @@
+.banner-root {
+  padding: 0.625rem;
+  background: #116efa;
+
+  text-align: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  p {
+    margin: 0;
+
+    font-size: var(--text-xs);
+    line-height: 1.2;
+
+    color: white;
+    white-space: pre;
+    overflow-x: auto;
+
+    /*FireFox*/
+    scrollbar-width: none;
+    /*IE10+*/
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      /*Chrome, Safari, Edge*/
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    background: #F3F7FF;
+    padding: 20px 7.5%;
+    max-width: 1800px;
+    margin: 0px auto;
+
+    .heading {
+        font-weight: 900;
+        font-size: 53px;
+        line-height: 63px;
+        color: #0C0E14;
+
+        @media(max-width:640px) {
+            font-size: 28px;
+        }
+
+    }
+
+    .sub-text-bold {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 154.34%;
+        color: #000000;
+
+        @media(max-width:640px) {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+    }
+
+    .sub-text {
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 154.34%;
+        text-align: center;
+        color: #000000;
+        opacity: 0.8;
+
+        @media(max-width:640px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

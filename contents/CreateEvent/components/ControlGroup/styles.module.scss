@@ -1,0 +1,28 @@
+.control-group {
+	display :flex;
+	flex-direction: column;
+
+	label {
+		margin: 0.8em 0 0.3em 0;
+		color: var(--text-color);
+		font-weight: 600;
+	}
+
+	input,
+	textarea,
+	.input {
+		border: none;
+		background-color: var(--color-gray-light);
+		padding: 0.5em 1em;
+		border-radius: 4px;
+
+		&:focus,
+		&:focus-within {
+			outline: none;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+}

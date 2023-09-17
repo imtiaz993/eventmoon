@@ -1,0 +1,152 @@
+.login-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .login-form-wrapper {
+    width: 100%;
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+
+      margin: 1rem;
+      margin-top: 4rem;
+
+      .input-fields {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .input-wrapper {
+          border-bottom: 1px solid var(--color-gray-2);
+
+          &.invalid {
+            border-bottom: 1px solid var(--color-red-1);
+          }
+        }
+
+        @media (max-width: 640px) {
+          .input-wrapper {
+            padding: 0.625rem 0;
+            border-radius: 0;
+            background: none;
+          }
+        }
+      }
+
+      h1 {
+        color: var(--color-primary-dark);
+        margin: 0;
+        font-weight: bold;
+        font-family: var(--family-inter);
+      }
+
+      .title.desktop {
+        color: var(--color-primary-dark);
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .title.mobile {
+        font-size: var(--text-lg);
+        color: var(--text-color-dark);
+        font-weight: 600;
+        font-family: var(--family-lato);
+      }
+
+      .forgot-password {
+        display: block;
+        text-align: center;
+        color: var(--text-color-dark);
+        font-weight: bold;
+
+        margin: 1.5rem 0;
+      }
+
+      .submit-btn {
+        padding: 0.85rem 0;
+
+        display: block;
+
+        font-size: var(--text-base);
+        font-weight: bold;
+
+        color: var(--color-primary-dark);
+        text-align: center;
+        border-radius: 100vw;
+        border: 2px solid var(--color-primary-dark);
+        text-transform: uppercase;
+
+        svg {
+          width: 60px;
+          height: 100%;
+        }
+      }
+
+      .have-account {
+        text-align: center;
+        color: var(--color-gray-3);
+        margin-top: 1rem;
+
+        .reg-btn {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .login-root {
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .login-form-wrapper {
+      max-width: 28rem;
+      margin-top: 1rem;
+
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+      border-radius: 0.75rem;
+
+      .login-form {
+        margin: 2rem;
+
+        h1 {
+          text-align: center;
+          color: var(--text-color-dark);
+        }
+        .input-fields .control-group {
+          label {
+            font-weight: bold;
+            font-family: var(--family-lato);
+          }
+          input {
+            padding: 0.5rem;
+            background-color: var(--color-gray-1);
+          }
+        }
+        .submit-btn {
+          border: none;
+          color: var(--text-color-white);
+          background-image: var(--gradient-primary);
+          border-radius: 6px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.section-root {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-inline: 1.125rem;
+
+  position: relative;
+
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline: 2.5rem;
+  }
+
+  @media (min-width: 1280px) {
+    padding-inline: 5.125rem;
+  }
+}

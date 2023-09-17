@@ -1,0 +1,33 @@
+.slider-root {
+  padding: 0.25rem;
+
+  .prev-btn,
+  .next-btn {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: var(--text-color-white);
+    font-size: var(--hd-md);
+    cursor: pointer;
+  }
+
+  .prev-btn {
+    left: 0.5rem;
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .next-btn {
+    right: 0.5rem;
+  }
+}

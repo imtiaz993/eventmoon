@@ -1,0 +1,97 @@
+.event-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // background: linear-gradient(98.99deg, #f4f9ff 4.74%, #cee4ff 96.43%);
+  padding: 20px 110px 20px 20px;
+  background-image: url("/assets/images/search-event-bg.png");
+.moon-image{
+  position: relative;
+  bottom: 30px;
+  margin-right: -10px;
+
+
+}
+  .event-content {
+    width: 35%;
+    .heading{
+      color: white;
+    }
+    .sub-heading {
+      color: #2681ff;
+    }
+    .heading,
+    .sub-heading {
+      margin: 6px 0px;
+      padding: 0px;
+      font-size: 47px;
+      font-weight: 600;
+    }
+    .text {
+      color: white;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
+
+  .search-wrapper {
+    display: flex;
+    width: 50%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+
+    .search-input {
+      width: 100%;
+    }
+    .search-button {
+      padding: 10px 30px;
+      border-radius: 12px;
+      border: none;
+      background-color: #2681ff;
+      color: white;
+      font-weight: 500;
+      font-size: 19px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 1024px) {
+    display: block;
+    .moon-image{
+      display: none;
+    }
+    .event-content {
+      width: 100%;
+    }
+    .search-wrapper {
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    background-image: url("/assets/images/serach-event-bg-mobile.png");
+    padding: 20px 20px;
+    
+    .event-content {
+      .heading,
+      .sub-heading {
+        font-size: 34px;
+        text-align: center;
+      }
+      .text {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .search-wrapper {
+      background-color: transparent;
+      .search-button {
+        padding:0px 10px;
+        margin: 0px;
+        margin-left: -15px;
+        z-index: 10;
+        font-size: 16px;
+      }
+    }
+  }
+}
